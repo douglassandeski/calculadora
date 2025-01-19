@@ -15,7 +15,7 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Layout',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 3, 1, 5)),
+       colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 3, 107, 66)),
         useMaterial3: true,
       ),
       home: const HomePage(title: 'Calculadora'),
