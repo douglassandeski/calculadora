@@ -1,6 +1,6 @@
-# myapp
+# Calculadora
 
-A new Flutter project.
+Repositório para a terceira unidade do curso desenvolvimento web.
 
 ## Getting Started
 
