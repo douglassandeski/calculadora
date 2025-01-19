@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'calculadora.dart';
 
 void main() {
@@ -15,7 +14,7 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Layout',
       theme: ThemeData(
-       colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 3, 107, 66)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 58, 183, 98)),
         useMaterial3: true,
       ),
       home: const HomePage(title: 'Calculadora'),
@@ -57,16 +56,14 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Expanded(
-                    child: Container(
-                      
-                        ),
+                    child: Container(),
                   ),
                   Expanded(
                     flex: 2,
                     child: Container(
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 173, 168, 168),
+                        color: Colors.grey.shade200,
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(
                           color: Colors.black,
@@ -84,30 +81,17 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Expanded(
-                    child: Container(
-                        // alignment: Alignment.center,
-                        // color: Colors.red,
-                        // child: const Text('Terceira Coluna'),
-                        ),
+                    child: Container(),
                   ),
                 ],
               ),
             ),
             Expanded(
               flex: 2,
-              child: Container(
-                //alignment: Alignment.center,
-                //color: Colors.blue,
-                //child: const Text('Layout Inferior'),
-              ),
+              child: Container(),
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
       ),
     );
   }
